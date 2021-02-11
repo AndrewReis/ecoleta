@@ -39,7 +39,7 @@ a:hover {
 #page-home {
   height: 100vh;
   background: url('../assets/home-background.svg') no-repeat;
-  background-position: 35vw bottom;
+  background-position: 33vw 11vh;
   background-size: contain;
 }
 
@@ -133,7 +133,7 @@ a:hover {
 @media (max-width: 900px){
 
   html {
-    font-size: 50%;
+    font-size: 60%;
     overflow: hidden;
   }
 
@@ -168,5 +168,16 @@ a:hover {
     height: 20%;
     align-items: flex-start;
   }
-
 }
+
+@media (max-width: 600px){
+  html {
+    font-size: 50%;
+  }
+}  
+
+@media (max-width: 400px){
+  html {
+    font-size: 40%;
+  }
+} 
