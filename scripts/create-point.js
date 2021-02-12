@@ -24,6 +24,9 @@ const AddressField = {
     const ufValue = event.target.value;
     const citiesUrl = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`;
 
+    AddressField.select_element_city.innerHTML = ''
+    AddressField.select_element_city.disabled = true;
+
     const data = await AddressField.handleApiIBGE(citiesUrl);
 
     const indexOfSelectUf = event.target.selectedIndex;
@@ -33,7 +36,7 @@ const AddressField = {
     AddressField.input_element_hidden.value = event.target.options[indexOfSelectUf].text
 
     for (let city of data) {
-      AddressField.select_element_city.innerHTML += `<option value="${city.id}">${city.nome}</option>`;
+      AddressField.select_element_city.innerHTML += `<option value="${city.nome}">${city.nome}</option>`;
     }
     
     AddressField.select_element_city.disabled = false;
