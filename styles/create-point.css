@@ -1,0 +1,97 @@
+#page-create-point {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#page-create-point header {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page-create-point header a {
+  font-size: 1.8rem;
+
+}
+
+#page-create-point header a span {
+  display: flex;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  background-image: url('../assets/arrow-left.svg');
+  margin-right: 1.6rem;
+}
+
+#page-create-point form {
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 6.4rem;
+  margin: 8rem auto 0;
+  border-radius: 0.8rem;
+
+}
+
+#page-create-point form fieldset {
+  margin-top: 6rem;
+  border: 0;
+}
+
+#page-create-point form fiel legend {
+  margin-bottom: 4rem;
+}
+
+#page-create-point form h1 {
+  font-size: 3.6rem;
+}
+
+#page-create-point form h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+#page-create-point form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  flex: 1;
+}
+
+#page-create-point form .field-group {
+  display: flex;
+}
+
+#page-create-point form label {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+#page-create-point form input, select {
+  background-color: #f0f0f5;
+  border: 0;
+  padding: 1.6rem 2rem;
+  font-size: 1.6rem;
+  outline: none;
+  border-radius: 0.8rem;
+}
+
+#page-create-point form .field + .field {
+  margin-left: 1.6rem;
+}
+
+#page-create-point form button {
+  width: 260px;
+  height: 56px;
+
+  background-color: var(--bg-secondary);
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  border: 0;
+  margin-top: 2rem;
+}
